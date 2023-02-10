@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="style.css" />
+    <title>MK Studios</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        /* MacBook Pro 14" - 1 */
+        position: relative;
+        width: 100%px;
+        height: 5295px;
+        background: #0e0d0c;
+      }
+      .menu {
+        /* Frame 1 */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 37px;
+        position: absolute;
+        width: 415px;
+        height: 22px;
+        left: 400px;
+        top: 27px;
+        cursor: pointer;
+      }
+      .menu a {
+        width: 47px;
+        height: 22px;
+        font-family: "Big Caslon";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #ffffff;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        text-decoration: none;
+      }
+      .logo {
+        /* Vector */
+        position: absolute;
+        width: 125px;
+        height: 294px;
+        left: 64px;
+        color: black;
+      }
+      .rectangle {
+        position: absolute;
+        width: 216px;
+        height: 157px;
+        left: 203px;
+        top: 491px;
+        background: #504b42;
+      }
+      .text-1 {
+        position: absolute;
+        width: 500px;
+        height: 116px;
+        left: 74px;
+        top: 505px;
+        font-family: "Big Caslon";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 58px;
+        color: #ffffff;
+      }
+      .rect-1 {
+        /* Rectangle 16 */
+        position: absolute;
+        width: 6px;
+        height: 97px;
+        left: 637px;
+        top: 578px;
+        background: #ece7dc;
+      }
+      .rect-2 {
+        /* Rectangle 17 */
+        position: absolute;
+        width: 6px;
+        height: 97px;
+        left: 71px;
+        top: 759px;
+        background: #ece7dc;
+      }
+      .rect-3 {
+        /* Rectangle 12 */
+        width: 245px;
+        height: 403px;
+        padding-left: 70%;
+        border-radius: 25px;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+      .rect-a {
+        /* Rectangle 20 */
+        position: absolute;
+        width: 100%;
+        height: 987px;
+        left: 0px;
+        top: 1133px;
+        background: url(images/Rectangle20.png);
+      }
+      .rect-b {
+        /* Rectangle 29 */
+        position: absolute;
+        width: 1100px;
+        height: 299px;
+        left: 77px;
+        top: 1659px;
+        background: rgba(8, 31, 23, 0.71);
+      }
+      .text-r {
+        position: absolute;
+        width: 900px;
+        height: 211px;
+        left: 217px;
+        top: 1701px;
+        font-family: "Big Caslon";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .rect-c {
+        /* Rectangle 32 */
+        position: absolute;
+        width: 6px;
+        height: 97px;
+        left: 96%;
+        top: 1912px;
+        background: #ece7dc;
+      }
+      .rect-21 {
+        /* Rectangle 21 */
+        position: absolute;
+        width: 50%;
+        height: 980px;
+        left: 0px;
+        top: 2120px;
+        background: url(images/Rectangle21.png);
+      }
+      .out p {
+        /* Outdoor shoots */
+        width: 301px;
+        height: 65px;
+        font-family: "Big Caslon";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        color: #ffffff;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+      .coner {
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 486px;
+        position: absolute;
+        width: 1088px;
+        height: 65px;
+        left: 36px;
+        top: 2998px;
+      }
+      .out-1 p {
+        /* Studio shoots */
+        width: 50%;
+        height: 60px;
+        font-family: "Big Caslon";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        color: #ffffff;
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+      }
+      .rect-36 {
+        /* Rectangle 36 */
+        position: absolute;
+        width: 50%;
+        height: 980px;
+        left: 50%;
+        top: 2114px;
+        background: url(images/Rectangle36.png);
+      }
+      .rect-01 {
+        /* Rectangle 33 */
+        position: absolute;
+        width: 6px;
+        height: 97px;
+        left: 36px;
+        top: 3080px;
+        background: #ece7dc;
+      }
+      .rect-34 {
+        /* Rectangle 34 */
+        position: absolute;
+        width: 216px;
+        height: 17px;
+        left: 82px;
+        top: 3216px;
+        background: #504b42;
+      }
+      .rect-35 {
+        /* Rectangle 35 */
+        position: absolute;
+        width: 216px;
+        height: 17px;
+        left: 798px;
+        top: 3216px;
+        background: #504b42;
+      }
+      .vid-pho {
+        /* Photography / Videography */
+        position: absolute;
+        width: 542px;
+        height: 58px;
+        left: 88px;
+        top: 3250px;
+        font-family: "Big Caslon";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 58px;
+        /* identical to box height */
+        color: #f7f7f7;
+      }
+      .cont-1 {
+        position: absolute;
+        width: 542px;
+        height: 307px;
+        left: 88px;
+        top: 3335px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #ffffff;
+      }
+      .live-stm {
+        /* Livestream */
+        position: absolute;
+        width: 220px;
+        height: 58px;
+        left: 804px;
+        top: 3250px;
+        font-family: "Big Caslon";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 58px;
+        /* identical to box height */
+        color: #dddddd;
+      }
+      .cont-2 {
+        position: absolute;
+        width: 542px;
+        height: 307px;
+        left: 804px;
+        top: 3335px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #f7f7f7;
+      }
+      .bis-1{
+        width: 200px;
+        height: auto;
+        border-radius: 25px;
+        flex: none;
+        left: 50%;
+        order: 0;
+        flex-grow: 0;
+      }
+      .bis-2{
+        width: 245px;
+height: 403px;
+
+background: url(images/Rectangle1-2.png);
+border-radius: 25px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+      }
+      .bis-3{
+        width: 245px;
+height: 403px;
+
+background: url(images/Rectangle2.png);
+border-radius: 25px;
+flex: none;
+order: 1;
+flex-grow: 0;
+      }
+      /*.rect-28{
+    /* Rectangle 28 
+position: absolute;
+width: 1512px;
+height: 573px;
+left: 0px;
+top: 3101px;
+background: #D9D9D9;
+}*/
+      .rect-37 {
+        /* Rectangle 37 */
+        position: absolute;
+        width: 100%;
+        height: 800px;
+        left: 0px;
+        top: 3671px;
+        background: url(images/Rectangle37.png);
+      }
+      .vid-1 {
+        /* Videos */
+        width: 301px;
+        height: 65px;
+        font-family: "Big Caslon";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        color: #ffffff;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+      .rect-39 {
+        /* Rectangle 39 */
+        position: absolute;
+        width: 50%;
+        height: 900px;
+        left: 0px;
+        top: 4455px;
+        background: url(images/Rectangle39.png);
+      }
+      .rect-40 {
+        /* Rectangle 40 */
+        position: absolute;
+        width: 50%;
+        height: 900px;
+        left: 50%;
+        top: 4455px;
+        background: url(images/Rectangle40.png);
+      }
+    .blw {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+
+.blw h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.blw a {
+  display: inline-block;
+  padding: 0 10px;
+  color: white;
+}
+
+
+      /*@media (min-width: 768px){
+    body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }*/
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="images/Vector.png" id="logo" /><a href="index.html"></a>
+    </div>
+    <div class="menu">
+      <a href="index.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="clients.html">Clients</a>
+      <a href="shop.html">Shop</a>
+      <a href="contuct.html">Contact</a>
+    </div>
+    <div class="rectangle"></div>
+    <div class="text-1">
+      <p>The heart and mind are the true lens of the camera.</p>
+    </div>
+    <div class="rect-1"><img src="images/Rectangle16.png" /></div>
+    <div class="rect-2"><img src="images/Rectangle16.png" /></div>
+    <div class="rect-3"><img src="images/Rectangle12.png" /></div>
+    <div class="bis-1"><img src="images/Rectangle1-2.png"></div>
+    <div class="bis-2"><!---<img src="images/Rectangle1-2.png">---></div>
+    <div class="bis-3"><!--<img src="images/Rectangle1-3.png">----></div>
+    <div class="bis-4"><img src="images/Rectangle1-4.png"></div>
+    <div class="rect-a"></div>
+    <div class="rect-b"></div>
+    <div class="text-r">
+      <p>
+        We shoot because we see differently. A Team of dedicated creatives who
+        offer visual solutions. With an experience of over 5yrs we have worked
+        with big brands to implement and bring their ideas to life. Our turnover
+        time is incredible and we exist to connect you with the target market
+      </p>
+    </div>
+    <div class="rect-c"><img src="images/Rectangle16.png" /></div>
+    <div class="rect-21"></div>
+
+    <div class="rect-36"></div>
+    <div class="coner">
+      <div class="out"><p>Outdoor shoots</p></div>
+      <div class="out-1"><p>Outdoor shoots</p></div>
+    </div>
+    <div class="rect-01"><img src="images/Rectangle16.png" /></div>
+    <div class="rect-34"><img src="images/Rectangle34.png" /></div>
+    <div class="rect-35"><img src="images/Rectangle34.png" /></div>
+    <div class="rect-28"></div>
+    <div class="vid-pho">Photography / Videography</div>
+    <div class="cont-1">
+      <li>Full day and half day shoots</li>
+      <li>Single shooter and multi shooters options</li>
+      <li>Photo editing ,color correction and retouching</li>
+      <li>Photo library hosting</li>
+      <li>
+        Corporate team photography, commercial photography, event photography,
+        lifestyle photography
+      </li>
+    </div>
+    <div class="live-stm">Livestream</div>
+    <div class="cont-2">
+      <li>Recorded footage of the livestream</li>
+      <li>Edited trailer of the livestream</li>
+      <li>Sound and mics for the event</li>
+      <li>Screens for presentation</li>
+      <li>Lower thirds and graphics design</li>
+    </div>
+
+    <div class="rect-37">
+      <div class="vid-1">Videos</div>
+    </div>
+    <div class="rect-39"></div>
+    <div class="rect-40"></div>
+<div class="blw">
+    <h2 style="display: inline-block;">Contact Us</h2>
+  <a href="https://www.facebook.com/">
+    <i class="fa fa-facebook-square" style="font-size:24px; padding-left: 10px;"></i>
+  </a>
+  <a href="https://www.linkedin.com/">
+    <i class="fa fa-linkedin" style="font-size:24px; padding-left: 10px;"></i>
+  </a>
+  <a href="https://twitter.com/">
+    <i class="fa fa-twitter-square" style="font-size:24px; padding-left: 10px;"></i>
+  </a></div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </body>
+</html>

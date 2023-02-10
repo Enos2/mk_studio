@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "poppins", san-serif;
+        box-sizing: border-box;
+      }
+      /*   body{
+                height: 100vh;
+                width: 100%;
+                background: #CBCBCB;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+            }*/
+      .container {
+        height: 140vh;
+        width: 100%;
+        background: #cbcbcb;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+      }
+      .vector {
+        position: absolute;
+        width: 70px;
+        height: 160px;
+        left: 56px;
+        top: 35px;
+        background: #cbcbcb;
+      }
+      .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0;
+        gap: 37px;
+        position: absolute;
+        width: 415px;
+        height: 22px;
+        left: 400px;
+        top: 30px;
+      }
+      .menu a {
+        width: 47px;
+        height: 25px;
+        font-family: "Big Caslon";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+        color: #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        text-decoration: none;
+      }
+      h1 {
+        position: absolute;
+        width: 250px;
+        height: 70px;
+        left: 614px;
+        top: 163px;
+        font-family: "Big Caslon";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 55px;
+        line-height: 77px;
+        color: #0e0d0c;
+      }
+      .rect-14 {
+        position: absolute;
+        width: 300px;
+        height: 494px;
+        left: 1000px;
+        top: -15px;
+        border-radius: 25px;
+      }
+      .below {
+        position: absolute;
+        width: 250px;
+        height: 494px;
+        left: 86px;
+        top: 102vh;
+        border-radius: 25px;
+        border-top: 100vh;
+      }
+      .row-a {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 48px;
+        position: absolute;
+        width: 576px;
+        height: 142px;
+        left: 98px;
+        top: 502px;
+      }
+      .row-a1 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+        width: 264px;
+        height: 142px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+      }
+      .email {
+        width: 264px;
+        height: 30px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #666666;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+      .pep {
+        width: 264px;
+        height: 24px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #666666;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+      .pip {
+        width: 142px;
+        height: 24px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #666666;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+      }
+      .icon-1 {
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 16.67%;
+        bottom: 16.67%;
+        border: 2px solid #666666;
+      }
+      .row-2 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+        width: 264px;
+        height: 142px;
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+      }
+      .cont-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 32px;
+        gap: 32px;
+        position: absolute;
+        width: 576px;
+        height: 181px;
+        left: 57px;
+        top: 281px;
+      }
+      .cont-1 h3 {
+        width: 512px;
+        height: 24px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #666666;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+      .cont-1 h2 {
+        width: 512px;
+        height: 44px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -0.02em;
+        color: #666666;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+      .cont-1 p {
+        width: 512px;
+        height: 50px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120x;
+        color: #666666;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+      .cont-a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 32px;
+        gap: 64px;
+        position: absolute;
+        width: 500px;
+        height: 520px;
+        left: 800px;
+        top: 374px;
+        background: #ffffff;
+        border-radius: 16px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      .container p {
+        margin-bottom: 40px;
+      }
+
+      .input-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .input-row .input-group {
+        flex-basis: 45%;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid rgb(83, 83, 83);
+        outline: none;
+        padding-bottom: 5px;
+      }
+
+      textarea {
+        width: 100%;
+        border: 1px solid#ccc;
+        outline: none;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      label {
+        margin-bottom: 6px;
+        display: block;
+        color: #000000;
+      }
+
+      /*.com-a {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.com-a input[type="checkbox"] + .box1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}*/
+
+      button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #666;
+        color: white;
+        border: 1px solid rgb(131, 131, 131);
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      button {
+        background: #000000;
+        width: 100px;
+        border: none;
+        outline: #fff;
+        color: #fff;
+        height: 35px;
+        border-radius: 30px;
+        margin-top: 20px;
+        box-shadow: 0px 5px 15px 0px rgba(71, 71, 71, 0.3);
+        transform: scale(1.2);
+        background-color: transparent;
+        border: 2px solid rgb(87, 87, 87);
+        color: rgb(80, 80, 80);
+        transition: 3s;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="cont">
+      <div class="logo" id="logo-1"></div>
+      <div class="vector" id="logo">
+        <img src="images/Vector1.png" /><a href="index.html"></a>
+      </div>
+      <div class="menu" id="bar">
+        <a href="index.html">About</a>
+        <a href="porfolio.html">Portfolio</a>
+        <a href="clients.html">Clients</a>
+        <a href="shop.html">Shop</a>
+        <a href="contuct.html">Contact</a>
+      </div>
+      <h1>Contact Us</h1>
+      <div class="rect-14" id="rec-14">
+        <img src="images/Rectangle14.png" />
+      </div>
+      <div class="cont-1" id="con-1">
+        <h3>Contact Us</h3>
+        <h2>Chat to our friendly team</h2>
+        <p>
+          We'd love to hear from you, please fill out this form or shoot us an
+          email.
+        </p>
+      </div>
+      <div class="row-a">
+        <div class="row-a1">
+          <!--<div class="icon-1">Icon</div>--->
+          <div class="email">
+            Email
+            <div class="pep">Our friendly team is here to help.</div>
+            <div class="pip">hi@untitledui.com</div>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div class="cun">
+            <div class="email">
+              Phone
+              <div class="pep">
+                Mon-Fri from 8am to 5pm.<br />+1 (555) 000-0000
+              </div>
+            </div>
+          </div>
+
+          <!---<div class="pip">+1 (555) 000-0000</div>-->
+        </div>
+      </div>
+      <div class="below" id="blw"><img src="images/Rectangle15.png" /></div>
+      <div class="cont-a" id="con-a">
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <!----<form onsubmit="event.preventDefault(); validateForm()">---->
+          <!---<form action="contuct.php" method="post">---->
+          <!-----  <form action="https://formsubmit.co/el/kedigu" method="POST">--->
+          <div class="input-row">
+            <div class="input-group">
+              <label>First name</label>
+              <input type="text" id="first" placeholder="First nam" required />
+              <small class="error"></small>
+            </div>
+            <div class="input-group">
+              <label>Last Name</label>
+              <input type="phone" id="last" placeholder="Last Nam" required />
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-group">
+              <label>Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="name@gmail.com"
+                required
+              />
+              <small class="error"></small>
+            </div>
+            <div class="input-group">
+              <label>Subject</label>
+              <input
+                type="text"
+                id="subject"
+                placeholder="Area of concern"
+                required
+              />
+            </div>
+          </div>
+
+          <label>Message</label>
+          <textarea rows="5" id="massage" placeholder="Your Message"></textarea>
+          <small class="error"></small>
+          <button type="submit">Send</button>
+          <p id="Success"></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
